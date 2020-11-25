@@ -1,0 +1,12 @@
+name: AdventCalendar
+version: ${project.version}
+main: dev.tomr.adventcalendar.AdventCalendar
+prefix: Advent
+authors: [ Cubits ]
+description: Advent Calendar Plugin
+website: https://tomr.dev
+commands:
+  advent:
+    description: Runs the Advent Calendar for that user. Only usable in a Command Block
+    usage: /advent [Player]
+    permission: advent.main
