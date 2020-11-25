@@ -112,8 +112,7 @@ public class MainCommand implements CommandExecutor {
                                                     p.sendMessage(ChatColor.GREEN + "" + ChatColor.MAGIC + "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
                                                     ConsoleCommandSender console = Bukkit.getServer().getConsoleSender();
                                                     String command = config.getString(day + ".prize");
-                                                    command.replace("%s", p.getDisplayName());
-                                                    Bukkit.dispatchCommand(console, command);
+                                                    Bukkit.dispatchCommand(console, String.format(command, p.getDisplayName()));
                                                 }
                                                 this.time--;
                                             }
