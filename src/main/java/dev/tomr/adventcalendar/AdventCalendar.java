@@ -1,5 +1,6 @@
 package dev.tomr.adventcalendar;
 
+import dev.tomr.adventcalendar.commands.ForceCommand;
 import dev.tomr.adventcalendar.commands.MainCommand;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.Plugin;
@@ -21,6 +22,7 @@ public final class AdventCalendar extends JavaPlugin {
             dir.mkdir();
         }
         this.getCommand("advent").setExecutor(new MainCommand());
+        this.getCommand("adventForce").setExecutor(new ForceCommand());
         plugin = this;
     }
 

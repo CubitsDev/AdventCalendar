@@ -10,3 +10,7 @@ commands:
     description: Runs the Advent Calendar for that user. Only usable in a Command Block
     usage: /advent [Player]
     permission: advent.main
+  adventForce:
+    description: Force Runs the Advent Calendar for specified user on a specified day.
+    usage: /adventForce [Player] [Day]
+    permission: advent.force

@@ -108,7 +108,7 @@ public class MainCommand implements CommandExecutor {
                                                 if (this.time == 3) {
                                                     p.sendMessage(ChatColor.GREEN + "" + ChatColor.MAGIC + "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
                                                     p.sendMessage(ChatColor.RED + "[Advent] " + ChatColor.GOLD + "Woo! You unlocked the following:");
-                                                    p.sendMessage(ChatColor.AQUA + "            " + config.getString(day + ".prizeFormat"));
+                                                    p.sendMessage(ChatColor.AQUA + "         " + config.getString(day + ".prizeFormat"));
                                                     p.sendMessage(ChatColor.GREEN + "" + ChatColor.MAGIC + "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
                                                     ConsoleCommandSender console = Bukkit.getServer().getConsoleSender();
                                                     String command = config.getString(day + ".prize");
