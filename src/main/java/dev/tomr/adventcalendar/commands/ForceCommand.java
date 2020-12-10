@@ -26,7 +26,10 @@ public class ForceCommand implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-
+        if (!(sender instanceof BlockCommandSender)) {
+            sender.sendMessage(ChatColor.RED + "[Advent] This command cannot be run by a player.");
+            return true;
+        }
             try {
                 FileConfiguration config = AdventCalendar.getInstance().getConfig();
                 Player p = Bukkit.getPlayer(args[0]);
